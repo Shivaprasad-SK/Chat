@@ -181,7 +181,7 @@ const ChatApp1 = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`${API_URL}/api/login`, {
+      const response = await fetch(`https://chatappbackend-2qb2.onrender.com/api/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(loginForm),
